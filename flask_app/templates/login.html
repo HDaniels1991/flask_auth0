@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron">
+  <div class="container">
+    <h1>Please login or Register!</h1>
+    <br>
+    <form action="{{url_for('auth0_login')}}">
+      <input type="submit" value="Auth0" />
+    </form>
+  </div>
+</div>
+{% endblock %}
