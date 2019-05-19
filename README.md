@@ -34,11 +34,10 @@ auth0_base_url = The Auth0 Domain
 auth0_token_url = The Auth0 Domain + /oauth/token
 auth0_authorization_url = The Auth0 Domain + /authorize
 ```
-5. Create the Database with the following commands:
-```bat
-flask db init
-flask db migrates
-flask db upgrade
+5. Create the Database with the following commands in python:
+```python
+from app import db
+db.create_all()
 ```
 6. Run the application:
 ```bat
